@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.22",
+	"EngineAssociation": "{2153FFF1-4AEA-127A-5DC7-7CA2CB53B229}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "CustomGravity",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -120,10 +123,17 @@
 		{
 			"Name": "SteamVR",
 			"Enabled": false
+		},
+		{
+			"Name": "GameLiftServerSDK",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineFramework",
+			"Enabled": true
 		}
 	],
 	"TargetPlatforms": [
-		"WindowsNoEditor",
-		"LinuxNoEditor"
+		"WindowsNoEditor"
 	]
 }
