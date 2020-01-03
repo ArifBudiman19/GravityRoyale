@@ -1,12 +1,12 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
-
-#include "GameLiftGameMode.h"
+#include "GravityRoyaleCPPGameMode.h"
+#include "GravityRoyaleCPPCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Modules/ModuleManager.h"
 #include "GameLiftServerSDK.h"
 
-AGameLiftGameMode::AGameLiftGameMode()
+AGravityRoyaleCPPGameMode::AGravityRoyaleCPPGameMode()
 {
 #if WITH_GAMELIFT
 	//Getting the module first.
